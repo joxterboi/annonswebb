@@ -19,6 +19,14 @@ body {
 	width: 100vw;
 	overflow:none;
 }
+/* Scrollbar */
+::-webkit-scrollbar {
+	width: 8px;
+}
+::-webkit-scrollbar-thumb {
+	background-color: var(--orange-color);
+	border-radius: 20px;
+}
 
 /*LOGO DESIGN*/
 .logoFirst {
