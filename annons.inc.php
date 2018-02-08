@@ -16,13 +16,23 @@ function setAds($conn) {
 			$result = mysqli_query($conn, $sql);
 			//echo "Din annons har lagts till!";
 			header("Location: dinAnnons.php");
-
 		}else{
 			echo "Fyll i alla fält innan du skickar in!";
 		}
 	}
 }
 
-
+function getAds($conn) {
+	$sql = "SELECT * FROM annonswebb";
+	$result = mysqli_query($conn, $sql);
+	while ($row = $result->fetch_assoc()) {
+			echo "<div class='annons'>";
+				echo "<h1>".$row['title']."</h1><br>";
+				echo $row['pris']."kr<br>";
+				echo $row['kortInfo']."<br>";
+				echo $row['model'];
+			echo "</div>";
+	}
+}
 
 // $result = mysqli_query($conn, $sql);
