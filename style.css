@@ -185,5 +185,12 @@ footer .footerContainer p {
 }
 .annons h1 {
 	font-size: 20px;
-	color:var(--orange-color)
+	color:var(--orange-color);
+	margin-bottom: 20px;
+	font-weight: 400;
+	margin-bottom: 5px;
+}
+.annons p {
+	color: var(--blue-color);
+	font-size: 15px;
 }

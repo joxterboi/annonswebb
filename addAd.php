@@ -1,7 +1,7 @@
 <?php include 'header.php'; ?>
 <?php
 echo "
-<form method='POST' action='".setAds($conn)."' class='addAd'>
+<form method='POST' action='".setAds($conn)."' class='addAd' enctype='multipart/form-data'>
 	<input type='hidden' name='aid' value=''>
 	<input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>
 	
