@@ -31,6 +31,7 @@ function setAds($conn) {
 					$imageNameNew = uniqid('', true).".".$imageActualExt;
 					$imageDestination = 'uploads/'.$imageNameNew;
 					move_uploaded_file($imageTmpName, $imageDestination);
+					$imageDbName = $_POST['key'] = $imageDestination;
 				} else {
 					echo "The images is to big!";
 				}
@@ -43,11 +44,11 @@ function setAds($conn) {
 
 
 		if ($title == !null && $pris == !null && $annonsText == !null && $kortInfo == !null && $ort == !null && $model == !null) {
-			$sql = "INSERT INTO annonswebb (aid, date, annonsText, pris, title, kortInfo, ort, model)
-			VALUES ('$aid', '$date', '$annonsText', '$pris', '$title', '$kortInfo', '$ort', '$model')";
+			$sql = "INSERT INTO annonswebb (aid, date, annonsText, pris, title, kortInfo, ort, model, imageName)
+			VALUES ('$aid', '$date', '$annonsText', '$pris', '$title', '$kortInfo', '$ort', '$model', '$imageDbName')";
 			$result = mysqli_query($conn, $sql);
 			//echo "Din annons har lagts till!";
-			header("Location: dinAnnons.php");
+			header("Location: index.php");
 		}else{
 			echo "Fyll i alla fält innan du skickar in!";
 		}
@@ -58,6 +59,7 @@ function getAds($conn) {
 	$result = mysqli_query($conn, $sql);
 	while ($row = $result->fetch_assoc()) {
 			echo "<div class='annons'>";
+				echo "<img src='".$row['imageName']."'>";
 				echo "<h1>".$row['title']."</h1><p>";
 				echo $row['pris']."kr<br>";
 				echo $row['kortInfo']."<br>";
