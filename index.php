@@ -1,5 +1,14 @@
 <?php include 'header.php'; ?>
-<?php
-getAds($conn);
- ?>
+<div id="hottestModels">
+
+</div>
+<div id="latestAds">
+    <h1>Senaste annonserna</h1>
+    <?php
+    getAds($conn);
+    ?>
+</div>
+<div id="hottestAds">
+
+</div>
 <?php include 'footer.php'; ?>

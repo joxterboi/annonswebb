@@ -43,7 +43,7 @@ function setAds($conn) {
 		}
 
 
-		if ($title == !null && $pris == !null && $annonsText == !null && $kortInfo == !null && $ort == !null && $model == !null) {
+		if ($title == !null && $pris == !null && $annonsText == !null && $kortInfo == !null && $ort == !null && $model == !null && $imageDbName == !null) {
 			$sql = "INSERT INTO annonswebb (aid, date, annonsText, pris, title, kortInfo, ort, model, imageName)
 			VALUES ('$aid', '$date', '$annonsText', '$pris', '$title', '$kortInfo', '$ort', '$model', '$imageDbName')";
 			$result = mysqli_query($conn, $sql);
@@ -59,8 +59,8 @@ function getAds($conn) {
 	$result = mysqli_query($conn, $sql);
 	while ($row = $result->fetch_assoc()) {
 			echo "<div class='annons'>";
-				echo "<img src='".$row['imageName']."'>";
-				echo "<h1>".$row['title']."</h1><p>";
+				echo "<div class='annonsImg'><img src='".$row['imageName']."'></div>";
+				echo "<h2>".$row['title']."</h2><p>";
 				echo $row['pris']."kr<br>";
 				echo $row['kortInfo']."<br>";
 				echo $row['model'];

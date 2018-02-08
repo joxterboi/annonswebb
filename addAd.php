@@ -19,6 +19,7 @@ echo "
 			<option value='iPhone8'>apple iPhone 8</option>
 			<option value='nexus5x'>Google nexus 5x</option>
 			<option value='nexus6p'>Google nexus 6p</option>
+			<option value='nexus5'>Google nexus 5</option>
 		</select>
 	</span>
 	<span style='float: right;'>
