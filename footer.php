@@ -12,7 +12,7 @@
 	width: 100vw;
 	background-color: #fff;
 	box-shadow: 0 -1px 3px rgba(0,0,0,0.23);
-	margin-top: 200px;
+	margin-top: 20px;
 	height: 75px;
 }
 .footerContainer {
