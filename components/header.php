@@ -2,6 +2,7 @@
 	date_default_timezone_set('Europe/Copenhagen');
 	include 'includes/dbh.inc.php';
 	include 'includes/annons.inc.php';
+	session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,12 +15,22 @@
 <body>
 	<div class="main-wrapper">
 	<header>
-		<a id="creatAccount" href="createAccount.php">Skapa ett konto!</a>
-		<form>
-			<button type="submit" name="logInSubmit">Logga in</button>
-			<input type="text" name="uid" placeholder="Användarnamn">
-			<input type="password" name="pwd" placeholder="Lösenord">
-		</form>
+		<?php
+			if (isset($_SESSION['u_id'])) {
+				echo '<form action="includes/logout.inc.php" method="POST">
+				<button type="submit" name="logOutSubmit">Logga ut</button>
+				</form>
+				<a href="dinaAnnonser.php">Se dina annonser!</a>
+				';
+			} else {
+				echo '<a id="creatAccount" href="createAccount.php">Skapa ett konto!</a>
+				<form action="includes/login.inc.php" method="POST">
+				<button type="submit" name="logInSubmit">Logga in</button>
+				<input type="text" name="uid" placeholder="Användarnamn">
+				<input type="password" name="pwd" placeholder="Lösenord">
+				</form>';
+			}
+		?>
 		<a href="index.php"><h1><span class="logoFirst">smart</span><span class="logoSecond">Buy</span></h1></a>
 
 		<span>
