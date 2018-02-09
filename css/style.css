@@ -29,50 +29,79 @@ body {
 }
 
 /*LOGO DESIGN*/
-.logoFirst {
+#logoFirst {
 	font-size: 65px;
 	color: var(--blue-color);
 	font-weight: 500;
 }
-.logoSecond {
+#logoSecond {
 	font-size: 73px;
 	color: var(--orange-color);
 	font-weight: 500;
 }
 
 /*HEADER*/
+form {
+	background: none;
+}
 header {
 	width: 100%;
 	height: 150px;
-	display: inline-flex;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.23);
 }
-header h1 {
-	line-height: 150px;
+header #headerContent {
+	width: 1500px;
+	margin: auto;
+	height: 100%;
+}
+header #logga {
 	position: absolute;
 	left: 50%;
-	transform: translateX(-50%)
+	transform: translateX(-50%);
+	top: 26px;
+}
+header form {
+	width: 226px;
+	height: 70px;
+	margin-top: -8px;
+}
+header span#rightButtons {
+	right: calc(50% - 750px);
+	top: 67px;
+	position: absolute;
+}
+#creatAccount {
+	position: relative;
+	left: 362px;
+	top:-43px
 }
 header button {
 	border: 1px solid var(--orange-color);
 	border-radius: 20px;
 	height: 35px;
-	background-color: #fff;
+	background:none;
 	color: var(--orange-color);
 	font-size: 17px;
-	margin-top: 56px;
 	padding: 0 10px;
 	cursor: pointer;
-	margin-right: 20px;
+	margin-left: 260px;
+	position: relative;
+	top:-40px;
+	width: 100px;
+	left: -17px;
+}
+header button#logOut {
+	margin-top: 110px;
+	margin-left: 225px;
 }
 header input {
 	border-bottom: solid 2px var(--blue-color);
 	height: 15px;
-	margin-top: 66px;
 	font-size: 17px;
-	margin-right: 30px;
 	color: var(--blue-color);
 	width: 226px;
+	background: none;
+	margin-top: 18px;
 }
 header input::placeholder {
 	color:#C2C2C2;
@@ -80,19 +109,10 @@ header input::placeholder {
 header a {
 	color:var(--orange-color);
 	text-decoration: none;
-	line-height: 150px;
 	font-size: 17px;
 }
-header #creatAcount {
-	margin-right: 20px;
-	margin-left: 20px;
-}
-header a#addAdHeaderButton {
-	margin-right: 30px;
-}
-header span {
-	position: absolute;
-	right: 10%;
+#addAdHeaderButton {
+	margin-right: 50px;
 }
 /*Footer*/
 /*See in "footer.php" for actual styling*/
