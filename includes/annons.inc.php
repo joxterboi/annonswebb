@@ -27,7 +27,7 @@ function setAds($conn) {
 
 		if (in_array($imageActualExt, $allowed)) {
 			if ($imageError === 0) {
-				if ($imageSize < 200000) {
+				if ($imageSize < 500000) {
 					$imageNameNew = uniqid('', true).".".$imageActualExt;
 					$imageDestination = 'uploads/'.$imageNameNew;
 					move_uploaded_file($imageTmpName, $imageDestination);

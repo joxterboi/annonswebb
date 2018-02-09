@@ -2,7 +2,6 @@
 	date_default_timezone_set('Europe/Copenhagen');
 	include 'includes/dbh.inc.php';
 	include 'includes/annons.inc.php';
-	include 'includes/signup.inc.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
