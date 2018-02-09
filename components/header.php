@@ -19,10 +19,11 @@
 			<?php
 				if (isset($_SESSION['u_id'])) {
 					echo '
-						<form action="includes/logout.inc.php" method="POST">
+					<p>'.$_SESSION["u_uid"].'</p>
+					<form action="includes/logout.inc.php" method="POST">
 						<button id="logOut" type="submit" name="logOutSubmit">Logga ut</button>
 						</form>
-						<a style="top:200px" href="dinaAnnonser.php">Se dina annonser här!</a>
+						<a id="seeYourAds" href="dinaAnnonser.php">Se dina annonser här!</a>
 					';
 				} else {
 					echo nl2br('

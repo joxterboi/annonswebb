@@ -92,7 +92,7 @@ header button {
 }
 header button#logOut {
 	margin-top: 110px;
-	margin-left: 225px;
+	margin-left: 84px;
 }
 header input {
 	border-bottom: solid 2px var(--blue-color);
@@ -111,8 +111,19 @@ header a {
 	text-decoration: none;
 	font-size: 17px;
 }
+header p {
+	top: 70px;
+	left: calc(50% - 750px);
+	position: absolute;
+	color: var(--blue-color)
+}
 #addAdHeaderButton {
 	margin-right: 50px;
+}
+#seeYourAds {
+	position: absolute;
+	top: 70px;
+	left: calc(50% - 540px);
 }
 /*Footer*/
 /*See in "footer.php" for actual styling*/
