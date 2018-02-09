@@ -48,7 +48,6 @@ header {
 	box-shadow: 0 1px 3px rgba(0,0,0,0.23);
 }
 header h1 {
-	text-align: center;
 	line-height: 150px;
 	position: absolute;
 	left: 50%;
@@ -89,8 +88,11 @@ header #creatAcount {
 	margin-left: 20px;
 }
 header a#addAdHeaderButton {
-	margin-left: 20%;
 	margin-right: 30px;
+}
+header span {
+	position: absolute;
+	right: 10%;
 }
 /*Footer*/
 /*See in "footer.php" for actual styling*/
