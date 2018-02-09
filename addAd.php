@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php include 'components/header.php'; ?>
 <?php
 echo "
 <form method='POST' action='".setAds($conn)."' class='addAd' enctype='multipart/form-data'>
@@ -47,4 +47,4 @@ echo "
 ";
 ?>
 
-<?php include 'footer.php'; ?>
+<?php include 'components/footer.php'; ?>

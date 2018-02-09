@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php include 'components/header.php'; ?>
 <div id="hottestModels">
 
 </div>
@@ -11,4 +11,4 @@
 <div id="hottestAds">
 
 </div>
-<?php include 'footer.php'; ?>
+<?php include 'components/footer.php'; ?>

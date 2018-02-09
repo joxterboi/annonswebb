@@ -1,7 +1,7 @@
 <?php
 	date_default_timezone_set('Europe/Copenhagen');
-	include 'dbh.inc.php';
-	include 'annons.inc.php';
+	include 'includes/dbh.inc.php';
+	include 'includes/annons.inc.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,13 +14,15 @@
 <body>
 	<div class="main-wrapper">
 	<header>
-		<button>Logga in</button>
-		<input type="text" placeholder="Användarnamn">
-		<input type="password" placeholder="Lösenord">
-
+		<a id="creatAccount" href="createAcount.php">Skapa ett konto!</a>
+		<form>
+			<button type="submit" name="logInSubmit">Logga in</button>
+			<input type="text" name="uid" placeholder="Användarnamn">
+			<input type="password" name="pwd" placeholder="Lösenord">
+		</form>
 		<a href="index.php"><h1><span class="logoFirst">smart</span><span class="logoSecond">Buy</span></h1></a>
 
-		<a href="addAd.php">Lägg upp en annons här!</a>
+		<a id="addAdHeaderButton" href="addAd.php">Lägg upp en annons här!</a>
 		<a href="#">Se bara annonser nära dig!</a>
 	</header>
 	<div class="wrapper">
