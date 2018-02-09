@@ -8,7 +8,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>smartBuy - Hem</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
 </head>
 <body>
