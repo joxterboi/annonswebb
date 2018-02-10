@@ -5,7 +5,7 @@
 <div id="latestAds">
     <h1>Senaste annonserna</h1>
     <?php
-    getAds($conn);
+        getAds($conn);
     ?>
 </div>
 <div id="hottestAds">
