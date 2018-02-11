@@ -76,6 +76,9 @@ function getYourAds($conn) {
 	$uploader = $_SESSION['u_uid'];
 	$sql = "SELECT * FROM annonswebb WHERE uploader='$uploader'";
 	$result = mysqli_query($conn, $sql);
+	$alertBox = <<<END
+	onClick="return confirm('Är du säker på att du vill tabort din annons?')"
+END;
 	while ($row = $result->fetch_assoc()) {
 			echo "<div class='annons'>";
 				echo "<div class='annonsImg'><img src='".$row['imageName']."'></div>";
@@ -87,7 +90,7 @@ function getYourAds($conn) {
 				echo "</p>
 					<form action='".deleteAd($conn)."' method='POST' class='deleteAd'>
 								<input type='hidden' name='aid' value='".$row['aid']."'>
-								<button type='submit' name='deleteAd'>Delete</button>
+								<button type='submit' name='deleteAd'".$alertBox.">Delete</button>
 							</form>
 					</div>";
 	}
