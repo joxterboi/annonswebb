@@ -1,7 +1,7 @@
 <?php include 'components/header.php'; ?>
     <div id="adsNearYouContainer">
         <h1>Var bor du?</h1>
-        <form action="">
+        <form action="" method="POST">
             <button value="1">Norrbotten</button><br>
             <button value="2">Västerbotten</button><br>
             <button value="3">Jämtland</button><br>
