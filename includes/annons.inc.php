@@ -90,6 +90,7 @@ END;
 				echo "</p>
 					<form action='".deleteAd($conn)."' method='POST' class='deleteAd'>
 								<input type='hidden' name='aid' value='".$row['aid']."'>
+								<input type='hidden' name='imageName' value='".$row['imageName']."'>
 								<button type='submit' name='deleteAd'".$alertBox.">Delete</button>
 							</form>
 					</div>";
@@ -98,6 +99,8 @@ END;
 function deleteAd($conn) {
 	if (isset($_POST['deleteAd'])) {
 		$aid = $_POST['aid'];
+		$imageName = $_POST['imageName'];
+		unlink($imageName);
 		$sql = "DELETE FROM annonswebb WHERE aid='$aid'";
 		$result = $conn->query($sql);
 		header("Location: dinaAnnonser.php?status=success");
