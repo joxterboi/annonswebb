@@ -73,8 +73,8 @@ function getAds($conn) {
 	}
 }
 function getYourAds($conn) {
-$uploader = $_SESSION['u_uid'];
-$sql = "SELECT * FROM annonswebb WHERE uploader='$uploader'";
+	$uploader = $_SESSION['u_uid'];
+	$sql = "SELECT * FROM annonswebb WHERE uploader='$uploader'";
 	$result = mysqli_query($conn, $sql);
 	while ($row = $result->fetch_assoc()) {
 			echo "<div class='annons'>";
@@ -84,8 +84,20 @@ $sql = "SELECT * FROM annonswebb WHERE uploader='$uploader'";
 				echo $row['kortInfo']."<br>";
 				echo $row['model'];
 				echo '<br>Redigera';
-				echo '<br><button action="submit">Ta bort</button>';
-			echo "</p></div>";
+				echo "</p>
+					<form action='".deleteAd($conn)."' method='POST' class='deleteAd'>
+								<input type='hidden' name='aid' value='".$row['aid']."'>
+								<button type='submit' name='deleteAd'>Delete</button>
+							</form>
+					</div>";
+	}
+}
+function deleteAd($conn) {
+	if (isset($_POST['deleteAd'])) {
+		$aid = $_POST['aid'];
+		$sql = "DELETE FROM annonswebb WHERE aid='$aid'";
+		$result = $conn->query($sql);
+		header("Location: dinaAnnonser.php?status=success");
 	}
 }
 
