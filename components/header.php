@@ -39,7 +39,7 @@
 			<a id="logga" href="index.php"><h1><span id="logoFirst">smart</span><span id="logoSecond">Buy</span></h1></a>
 			<span id="rightButtons">
 				<a id="addAdHeaderButton" href="addAd.php">Lägg upp en annons här!</a>
-				<a href="#">Se bara annonser nära dig!</a>
+				<a href="adsNearYou.php">Se bara annonser nära dig!</a>
 			</span>
 		</div>
 	</header>

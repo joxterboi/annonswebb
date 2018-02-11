@@ -37,8 +37,29 @@ echo "
 		<h2>Din ort</h2>	
 		<select name='ort' id='ortVal' style='width: 247px'>
 			<option value='' disabled selected hidden>Välj ort här</option>
-			<option value='sthlm'>Stockholm</option>
-			<option value='gotenborg'>Göteborg</option>
+			<option value='1'>Norrbotten</option>
+			<option value='2'>Västerbotten</option>
+			<option value='3'>Jämtland</option>
+			<option value='4'>Västernorrland</option>
+			<option value='5'>Gävleborg</option>
+			<option value='6'>Dalarna</option>
+			<option value='7'>Värmland</option>
+			<option value='8'>Örebro</option>
+			<option value='9'>Västmanland</option>
+			<option value='10'>Uppsala</option>
+			<option value='11'>Stockholm</option>
+			<option value='12'>Södermanland</option>
+			<option value='13'>Skaraborg</option>
+			<option value='14'>Östergötland</option>
+			<option value='15'>Göteborg</option>
+			<option value='16'>Älvsborg</option>
+			<option value='17'>Jönköping</option>
+			<option value='18'>Kalmar</option>
+			<option value='19'>Gotland</option>
+			<option value='20'>Halland</option>
+			<option value='21'>Kronoberg</option>
+			<option value='22'>Blekinge</option>
+			<option value='23'>Skåne</option>
 		</select>
 	</span>
 
