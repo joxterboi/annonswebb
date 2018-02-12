@@ -285,3 +285,27 @@ footer .footerContainer p {
 	cursor: pointer;
 	margin-top: 3px;
 }
+
+/* SIGN UP */
+#signupContainer {
+	width: 400px;
+	margin: 0 auto;
+	margin-bottom: 80px;
+}
+#signupContainer input{
+	width: 396px;
+	height: 20px;
+	padding: 1px 2px;
+	margin-top: 15px;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+#signupContainer button {
+	padding: 6px 20px;
+	background: none;
+	color: var(--orange-color);
+	font-size: 17px;
+	margin-top: 15px;
+	float: right;
+	border: 1px solid var(--orange-color);
+	border-radius: 200px
+}
