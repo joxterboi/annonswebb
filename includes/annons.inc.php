@@ -108,3 +108,24 @@ function deleteAd($conn) {
 }
 
 // $result = mysqli_query($conn, $sql);
+
+// Dispaying ads near you
+function adNearYou($conn) {
+	if (isset($_POST['adsNearYouSubmit'])) {
+		$place = $_POST['place'];
+		$sql = "SELECT * FROM annonswebb WHERE ort='$place'";
+		$result = mysqli_query($conn, $sql);
+		header ("Location: adsNearYouDisplay.php");
+		while ($row = $result->fetch_assoc()) {
+					echo "<div class='annons'>";
+				echo "<div class='annonsImg'><img src='".$row['imageName']."'></div>";
+				echo "<h2>".$row['title']."</h2><p>";
+				echo $row['pris']."kr<br>";
+				echo $row['kortInfo']."<br>";
+				echo $row['model'];
+				echo "</div>";
+		}
+	} else {
+		echo "$place";
+	}
+}
