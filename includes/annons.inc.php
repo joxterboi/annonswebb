@@ -136,7 +136,7 @@ function adNearYouDisplay($conn) {
 	$result = mysqli_query($conn, $sql);
 
 			while ($row = $result->fetch_assoc()) {
-					echo "<div class='annons'>";
+					echo "<div class='annons annonsNearYou'>";
 				echo "<div class='annonsImg'><img src='".$row['imageName']."'></div>";
 				echo "<h2>".$row['title']."</h2><p>";
 				echo $row['pris']."kr<br>";

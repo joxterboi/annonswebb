@@ -309,3 +309,8 @@ footer .footerContainer p {
 	border: 1px solid var(--orange-color);
 	border-radius: 200px
 }
+
+/* Ad near you */
+.annonsNearYou {
+	margin: 0 auto;
+}
