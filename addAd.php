@@ -15,11 +15,31 @@ echo "
 		<h2>Telefon modell</h2>	
 		<select name='model' id='phoneModel' style='width: 247px'>
 			<option value='' disabled selected hidden>Välj modell här</option>
-			<option value='iPhone7'>apple iPhone 7</option>
-			<option value='iPhone8'>apple iPhone 8</option>
-			<option value='nexus5x'>Google nexus 5x</option>
-			<option value='nexus6p'>Google nexus 6p</option>
+			<option value='iPhone4'>Apple iPhone 4</option>
+			<option value='iPhone5'>Apple iPhone 5</option>
+			<option value='iPhone5s'>Apple iPhone 5s</option>
+			<option value='iPhone6'>Apple iPhone 6</option>
+			<option value='iPhone6+'>Apple iPhone 6 Plus</option>
+			<option value='iPhone6s+'>Apple iPhone 6s Plus</option>
+			<option value='iPhone6s'>Apple iPhone 6s</option>
+			<option value='iPhone7'>Apple iPhone 7</option>
+			<option value='iPhone7+'>Apple iPhone 7 Plus</option>
+			<option value='iPhone8'>Apple iPhone 8</option>
+			<option value='iPhone8+'>Apple iPhone 8 Plus</option>
 			<option value='nexus5'>Google nexus 5</option>
+			<option value='nexus5x'>Google nexus 5x</option>
+			<option value='nexus6'>Google nexus 6</option>
+			<option value='nexus6p'>Google nexus 6p</option>
+			<option value='pixel'>Google Pixel</option>
+			<option value='pixelxl'>Google Pixel XL</option>
+			<option value='pixel2'>Google Pixel 2</option>
+			<option value='pixel2xl'>Google Pixel 2 XL</option>
+			<option value='1+3'>Oneplus 3</option>
+			<option value='1+3t'>Oneplus 3t</option>
+			<option value='1+5'>Oneplus 5</option>
+			<option value='1+5t'>Oneplus 5t</option>
+			<option value='1+6'>Oneplus 6</option>
+			<option value='ESP'>Essential phone</option>
 		</select>
 	</span>
 	<span style='float: right;'>
